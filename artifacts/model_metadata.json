@@ -1,0 +1,74 @@
+{
+  "project": "COM763 Portfolio Task 1 \u2014 Telco Customer Churn",
+  "model_type": "LogisticRegression",
+  "target": "Churn",
+  "positive_class": 1,
+  "decision_threshold": 0.322339844903193,
+  "feature_order": [
+    "gender",
+    "SeniorCitizen",
+    "Partner",
+    "Dependents",
+    "tenure",
+    "PhoneService",
+    "MultipleLines",
+    "InternetService",
+    "OnlineSecurity",
+    "OnlineBackup",
+    "DeviceProtection",
+    "TechSupport",
+    "StreamingTV",
+    "StreamingMovies",
+    "Contract",
+    "PaperlessBilling",
+    "PaymentMethod",
+    "MonthlyCharges",
+    "TotalCharges"
+  ],
+  "numeric_features": [
+    "tenure",
+    "MonthlyCharges",
+    "TotalCharges"
+  ],
+  "categorical_features": [
+    "gender",
+    "SeniorCitizen",
+    "Partner",
+    "Dependents",
+    "PhoneService",
+    "MultipleLines",
+    "InternetService",
+    "OnlineSecurity",
+    "OnlineBackup",
+    "DeviceProtection",
+    "TechSupport",
+    "StreamingTV",
+    "StreamingMovies",
+    "Contract",
+    "PaperlessBilling",
+    "PaymentMethod"
+  ],
+  "training_rows": 5634,
+  "test_rows": 1409,
+  "random_state": 42,
+  "best_hyperparameters": {
+    "model__C": 1.0
+  },
+  "test_metrics_tuned_threshold": {
+    "accuracy": 0.6657203690560681,
+    "balanced_accuracy": 0.7468495698674726,
+    "precision": 0.43821656050955415,
+    "recall": 0.9197860962566845,
+    "f1": 0.5936151855047455,
+    "f2": 0.7540552389302937,
+    "roc_auc": 0.8414735591206179,
+    "pr_auc": 0.6325084629833057
+  },
+  "versions": {
+    "python": "3.13.5",
+    "pandas": "2.2.3",
+    "numpy": "2.3.5",
+    "scikit_learn": "1.8.0",
+    "joblib": "1.5.3"
+  }
+}
